@@ -31,7 +31,6 @@ class ServiceAtendimento {
         if(!AtendimentoAlterar){
             throw new Error("Atendimento não encontrada")
         }
-        AtendimentoAlterar.nome = nome
 
         await AtendimentoAlterar.save()
         
