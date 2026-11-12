@@ -7,6 +7,7 @@ router.get("/buscar", ControllerAtendimento.Buscar)
 router.get("/buscarUm/:id", ControllerAtendimento.BuscarUm)
 router.post("/criar", ControllerAtendimento.Criar)
 router.put("/alterar/:id", ControllerAtendimento.Alterar)
+router.put("/alterarstatus", ControllerAtendimento.AlterarStatus)
 router.delete("/deletar/:id", ControllerAtendimento.Buscar)
 
 

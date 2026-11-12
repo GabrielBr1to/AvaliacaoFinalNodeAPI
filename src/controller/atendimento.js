@@ -38,6 +38,17 @@ class ControllerCliente {
             res.send({ message: error.message })
         }
     }
+    AlterarStatus(req,res){
+        try {
+            const id = req.params.id
+            const { dia, hora, valor, concluida } = req.body
+            Service.Alterar(id, dia, hora, valor, concluida)
+
+            res.send({mensagem: "atendimento alterado"})
+        } catch (error) {
+            res.send({ mensagem: error.message })
+        }
+    }
     
 
 }
