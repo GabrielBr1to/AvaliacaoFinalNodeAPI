@@ -10,6 +10,6 @@ router.put("/alterar/:id", ControllerCliente.Alterar)
 router.delete("/deletar/:id", ControllerCliente.Buscar)
 
 
-router.get("/buscar", ControllerAtendimento.Buscar)
+
 
 export default router

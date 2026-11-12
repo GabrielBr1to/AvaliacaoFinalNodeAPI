@@ -12,13 +12,13 @@ class Atendimento {
                 type:database.db.Sequelize.INTEGER,
             },
             hora:{
-                type:database.db.Sequelize.String,
+                type:database.db.Sequelize.STRING,
             },
             valor:{
-                type:database.db.Sequelize.String,
+                type:database.db.Sequelize.STRING,
             },
             concluido:{
-                type:database.db.Sequelize.boolean,
+                type:database.db.Sequelize.BOOLEAN,
             }
         })
     }

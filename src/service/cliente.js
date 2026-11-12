@@ -1,5 +1,3 @@
-import pessoa from '../model/cliente.js'
-import Pessoa from '../model/atendimento.js'
 import cliente from '../model/cliente.js'
 
 class ServiceCliente {
@@ -13,7 +11,7 @@ class ServiceCliente {
             throw new Error("Favor informar somente números")
         }
 
-        return cliente.BuscarUm(id)
+        return cliente.findByPk(id)
     }
     
     async Criar(nome, idade) {
